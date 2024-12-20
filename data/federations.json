@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "name": "IAAF",
+        "country": "Global",
+        "foundedYear": 1912
+    },
+    {
+        "id": 2,
+        "name": "World Athletics",
+        "country": "Global",
+        "foundedYear": 2019
+    },
+    {
+        "id": 3,
+        "name": "USATF",
+        "country": "USA",
+        "foundedYear": 1979
+    },
+    {
+        "id": 4,
+        "name": "European Athletics",
+        "country": "Europe",
+        "foundedYear": 1970
+    },
+    {
+        "id": 5,
+        "name": "Asian Athletics Association",
+        "country": "Asia",
+        "foundedYear": 1973
+    },
+    {
+        "id": 6,
+        "name": "Athletics South Africa",
+        "country": "South Africa",
+        "foundedYear": 1992
+    },
+    {
+        "id": 7,
+        "name": "Athletics Canada",
+        "country": "Canada",
+        "foundedYear": 1884
+    }
+]

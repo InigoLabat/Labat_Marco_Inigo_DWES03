@@ -1,0 +1,69 @@
+[
+    {
+        "id": 1,
+        "name": "Usain Bolt",
+        "age": 37,
+        "club": "Racers Track Club",
+        "bestMarks": {
+            "100m": "9.58s",
+            "200m": "19.19s"
+        }
+    },
+    {
+        "id": 2,
+        "name": "Mo Farah",
+        "age": 40,
+        "club": "Oregon Track Club",
+        "bestMarks": {
+            "5000m": "12:53.11",
+            "10000m": "26:46.57"
+        }
+    },
+    {
+        "id": 3,
+        "name": "Allyson Felix",
+        "age": 38,
+        "club": "Santa Clarita Runners",
+        "bestMarks": {
+            "200m": "21.69s",
+            "400m": "49.26s"
+        }
+    },
+    {
+        "id": 4,
+        "name": "Eliud Kipchoge",
+        "age": 39,
+        "club": "NN Running Team",
+        "bestMarks": {
+            "Marathon": "2:01:09"
+        }
+    },
+    {
+        "id": 5,
+        "name": "Shelly-Ann Fraser-Pryce",
+        "age": 36,
+        "club": "Elite Performance",
+        "bestMarks": {
+            "100m": "10.60s",
+            "200m": "21.79s"
+        }
+    },
+    {
+        "id": 6,
+        "name": "Yulimar Rojas",
+        "age": 28,
+        "club": "Caracas Athletics",
+        "bestMarks": {
+            "Triple Jump": "15.74m"
+        }
+    },
+    {
+        "id": 7,
+        "name": "Karsten Warholm",
+        "age": 28,
+        "club": "Oslo Hurdles Club",
+        "bestMarks": {
+            "400m Hurdles": "45.94s"
+        }
+    }
+]

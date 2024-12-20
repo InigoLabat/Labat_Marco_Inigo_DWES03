@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "name": "Racers Track Club",
+        "country": "Jamaica",
+        "federation": "IAAF"
+    },
+    {
+        "id": 2,
+        "name": "NN Running Team",
+        "country": "Kenya",
+        "federation": "World Athletics"
+    },
+    {
+        "id": 3,
+        "name": "Santa Clarita Runners",
+        "country": "USA",
+        "federation": "USATF"
+    },
+    {
+        "id": 4,
+        "name": "Elite Performance",
+        "country": "Jamaica",
+        "federation": "IAAF"
+    },
+    {
+        "id": 5,
+        "name": "Caracas Athletics",
+        "country": "Venezuela",
+        "federation": "World Athletics"
+    },
+    {
+        "id": 6,
+        "name": "Oregon Track Club",
+        "country": "USA",
+        "federation": "USATF"
+    },
+    {
+        "id": 7,
+        "name": "Oslo Hurdles Club",
+        "country": "Norway",
+        "federation": "European Athletics"
+    }
+]
