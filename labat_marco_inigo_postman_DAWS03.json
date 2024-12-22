@@ -1,0 +1,409 @@
+{
+    "info": {
+        "_postman_id": "30c3ecfb-383f-416f-9914-0e61ad057797",
+        "name": "DAWS03",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "description": "En este fichero, se encuentran las consultas de la Tarea Evaluativa 2 de la UD03 de DAWS. Mediante estas consultas, podrás realizar operaciones CRUD en un entorno de sistema de información de atletismo. Pobremos almacenar, editar, eliminar y ver información sobre atletas, clubes y federaciones de atletismo."
+    },
+    "item": [
+        {
+            "name": "Obtener todos los atletas",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://localhost/DWES03/public/atleta/get",
+                    "path": [
+                        "DWES03",
+                        "public",
+                        "atleta",
+                        "get"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ]
+                },
+                "description": "Mediante esta solicitud GET obtenemos todos los atletas almacenados junto con su información"
+            }
+        },
+        {
+            "name": "Obtener todos los clubes",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://localhost/DWES03/public/club/get",
+                    "path": [
+                        "DWES03",
+                        "public",
+                        "club",
+                        "get"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ]
+                },
+                "description": "Mediante esta solicitud GET obtenemos todos los clubes almacenados junto con su información"
+            }
+        },
+        {
+            "name": "Obtener todos las federaciones",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://localhost/DWES03/public/federacion/get",
+                    "path": [
+                        "DWES03",
+                        "public",
+                        "federacion",
+                        "get"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ]
+                },
+                "description": "Mediante esta solicitud GET obtenemos todos las federaciones almacenadas junto con su información"
+            }
+        },
+        {
+            "name": "Obtener atleta con ID 2",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://localhost/DWES03/public/atleta/get/2",
+                    "path": [
+                        "DWES03",
+                        "public",
+                        "atleta",
+                        "get",
+                        "2"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ]
+                },
+                "description": "Mediante esta solicitud GET obtenemos el atleta con un ID concreto, junto con su información. En este caso se ha seleccionado el ID 2, pero cambiando el valor numérico de la url cambiaremos el ID seleccionado."
+            }
+        },
+        {
+            "name": "Obtener club con ID 7",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://localhost/DWES03/public/club/get/7",
+                    "path": [
+                        "DWES03",
+                        "public",
+                        "club",
+                        "get",
+                        "7"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ]
+                },
+                "description": "Mediante esta solicitud GET obtenemos el club con un ID concreto, junto con su información. En este caso se ha seleccionado el ID 7, pero cambiando el valor numérico de la url cambiaremos el ID seleccionado."
+            }
+        },
+        {
+            "name": "Obtener federacion con ID 5",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://localhost/DWES03/public/federacion/get/5",
+                    "path": [
+                        "DWES03",
+                        "public",
+                        "federacion",
+                        "get",
+                        "5"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ]
+                },
+                "description": "Mediante esta solicitud GET obtenemos la federacion con un ID concreto, junto con su información. En este caso se ha seleccionado el ID 5, pero cambiando el valor numérico de la url cambiaremos el ID seleccionado."
+            }
+        },
+        {
+            "name": "Crear nuevo atleta",
+            "request": {
+                "method": "POST",
+                "header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+                "url": {
+                    "raw": "http://localhost/DWES03/public/atleta/create",
+                    "path": [
+                        "DWES03",
+                        "public",
+                        "atleta",
+                        "create"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ]
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  \"name\": \"Jon Etxeberria\",\n  \"age\": 29,\n  \"club\": \"NN Running Team\",\n  \"BestMarks\": {\n    \"Long jump\": \"8.16m\"\n  }\n}"
+                },
+                "description": "Mediante esta solicitud POST, crearíamos un nuevo atleta. En el body de la solicitud se pasa la información a almacenar mediante un JSON."
+            }
+        },
+        {
+            "name": "Crear nuevo club",
+            "request": {
+                "method": "POST",
+                "header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+                "url": {
+                    "raw": "http://localhost/DWES03/public/club/create",
+                    "path": [
+                        "DWES03",
+                        "public",
+                        "club",
+                        "create"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ]
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  \"name\": \"Real Sociedad\",\n  \"country\": \"EH\",\n  \"federation\": \"RFEA\"\n}"
+                },
+                "description": "Mediante esta solicitud POST, crearíamos un nuevo club. En el body de la solicitud se pasa la información a almacenar mediante un JSON."
+            }
+        },
+        {
+            "name": "Crear nueva federacion",
+            "request": {
+                "method": "POST",
+                "header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+                "url": {
+                    "raw": "http://localhost/DWES03/public/federacion/create",
+                    "path": [
+                        "DWES03",
+                        "public",
+                        "federacion",
+                        "create"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ]
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  \"name\": \"FVA\",\n  \"country\": \"EH\",\n  \"foundedYear\": 2000\n}"
+                },
+                "description": "Mediante esta solicitud POST, crearíamos un nueva federación. En el body de la solicitud se pasa la información a almacenar mediante un JSON."
+            }
+        },
+        {
+            "name": "Actualizar el atleta creado",
+            "request": {
+                "method": "PUT",
+                "header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+                "url": {
+                    "raw": "http://localhost/DWES03/public/atleta/update/8",
+                    "path": [
+                        "DWES03",
+                        "public",
+                        "atleta",
+                        "update",
+                        "8"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ]
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  \"club\": \"Real Sociedad\"\n}"
+                },
+                "description": "Mediante esta solicitud PUT, actualiza la información almacenada de un atleta ya creado usando su ID como referencia. En la url, especificamos el ID del atletas a actualizar, en este caso el ID 8. En el body de la solicitud se pasa la información a actualizar mediante un JSON."
+            }
+        },
+        {
+            "name": "Actualizar el club creado",
+            "request": {
+                "method": "PUT",
+                "header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+                "url": {
+                    "raw": "http://localhost/DWES03/public/club/update/8",
+                    "path": [
+                        "DWES03",
+                        "public",
+                        "club",
+                        "update",
+                        "8"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ]
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  \"federation\": \"FVA\"\n}"
+                },
+                "description": "Mediante esta solicitud PUT, actualiza la información almacenada de un club ya creado usando su ID como referencia. En la url, especificamos el ID del club a actualizar, en este caso el ID 8. En el body de la solicitud se pasa la información a actualizar mediante un JSON."
+            }
+        },
+        {
+            "name": "Actualizar la federacion creada",
+            "request": {
+                "method": "PUT",
+                "header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+                "url": {
+                    "raw": "http://localhost/DWES03/public/federacion/update/8",
+                    "path": [
+                        "DWES03",
+                        "public",
+                        "federacion",
+                        "update",
+                        "8"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ]
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  \"foundedYear\": 2024\n}"
+                },
+                "description": "Mediante esta solicitud PUT, actualiza la información almacenada de una federacion ya creada usando su ID como referencia. En la url, especificamos el ID de la federacion a actualizar, en este caso el ID 8. En el body de la solicitud se pasa la información a actualizar mediante un JSON."
+            }
+        },
+        {
+            "name": "Eliminar la federacion creada",
+            "request": {
+                "method": "DELETE",
+                "url": {
+                    "raw": "http://localhost/DWES03/public/federacion/delete/8",
+                    "path": [
+                        "DWES03",
+                        "public",
+                        "federacion",
+                        "delete",
+                        "8"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ]
+                },
+                "description": "Mediante esta consulta DELETE, elimina una federacion específica usando como referencia su ID. En la url, especificamos el ID de la federacion a eliminar, en este caso el ID 8, pero se podría modificar este valor."
+            }
+        },
+        {
+            "name": "Eliminar el club creado",
+            "request": {
+                "method": "DELETE",
+                "url": {
+                    "raw": "http://localhost/DWES03/public/club/delete/8",
+                    "path": [
+                        "DWES03",
+                        "public",
+                        "club",
+                        "delete",
+                        "8"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ]
+                },
+                "description": "Mediante esta consulta DELETE, elimina un club específico usando como referencia su ID. En la url, especificamos el ID del club a eliminar, en este caso el ID 8, pero se podría modificar este valor."
+            }
+        },
+        {
+            "name": "Eliminar el atleta creado",
+            "request": {
+                "method": "DELETE",
+                "url": {
+                    "raw": "http://localhost/DWES03/public/atleta/delete/8",
+                    "path": [
+                        "DWES03",
+                        "public",
+                        "atleta",
+                        "delete",
+                        "8"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ]
+                },
+                "description": "Mediante esta consulta DELETE, elimina un atleta específico usando como referencia su ID. En la url, especificamos el ID del atleta a eliminar, en este caso el ID 8, pero se podría modificar este valor."
+            }
+        }
+    ]
+}
